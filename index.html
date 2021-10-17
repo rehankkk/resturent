@@ -5,38 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./index1.css">
     <script src="https://kit.fontawesome.com/5001899231.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="wrapper">
-    <nav class="menu">
-       
+      <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
         <ul id="menu-list">
           <li><a href="" target="_blank" >TACOS</a></li>
           <li><a href="" target="_blank" >BEERS</a></li>
           <li><a href="" target="_blank" >WINES</a></li>
           <li><a href="" target="_blank" >DESSERTS</a></li>
           <li><a href="" target="_blank" >RESERVAT</a></li>
-      </ul>
-    
-    </nav>
-    
-     <main>
+        </ul>
+       </nav>
          <div class="top">
-         <div class="hero">
+            <header class="hero">
                 <h1>Terry's Taco Joint</h1>
                 <p>Pretty Good Tacos!</p>         
-         </div>
-         <div class="cta cta1">
+            </header>
+            <div class="cta cta1">
                  <p class="price" >$1.99</p>
                  <p>Tacos</p> 
-         </div>
+            </div>
             <div class="cta cta2">
               <p class="price" >$3.99</p>
               <p>Kombucha</p> 
             </div>
         </div>
-        <div class="features" >
+        <section class="features" >
            <div class="feature">
                <img  class="icon" src="./icons/taco.png" alt="" width="40px" height="40px">
                <h3>Tacos</h3>
@@ -57,9 +59,9 @@
             <h3>Music</h3>
             <p>maiores, itaque ipsa praesentium atque sint suscipit odit similique necessitatibus odio</p>
             </div>
-        </div>
+        </section>
         
-           <div class="about">
+           <section class="about">
              <img id="image" src="./images/queso-taco.png" alt="" class="about_mocup">
           
            <div class="about_details">
@@ -70,7 +72,7 @@
             </div>
             </div>
            <section class="gallery">
-               <h2>::before "Instent Grams" ::after</h2>
+               <h2>Instent Grams</h2>
                <img src="https://source.unsplash.com/random/207x210" alt="">
                <img src="https://source.unsplash.com/random/207x209" alt="">
                <img src="https://source.unsplash.com/random/207x208" alt="">
@@ -83,9 +85,19 @@
                <img src="https://source.unsplash.com/random/201x201" alt="">
 
            </section>
-     </main>
+     
    
 </div>
+ 
+<script>
+  const navButton = document.querySelector('button[aria-expanded]');
 
+  function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+</script>
 </body>
 </html>
