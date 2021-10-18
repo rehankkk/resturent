@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./wine.css">
+    <script src="https://kit.fontawesome.com/5001899231.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+      <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
+        <ul id="menu-list">
+          <li><a href="./index.html" target="" >TACOS</a></li>
+          <li><a href="./beer.html" target="" >BEERS</a></li>
+          <li><a href="./wines.html" target="" >WINES</a></li>
+          <li><a href="./dessert.html" target="" >DESSERTS</a></li>
+          <li><a href="./reservat.html" target="" >RESERVAT</a></li>
+        </ul>
+       </nav>
+         <div class="top">
+            <header class="hero">
+                <h1>Terry's Taco Joint</h1>
+                <p>Pretty Good Tacos!</p>         
+            </header>
+            <div class="cta cta1">
+                 <p class="price" >₹400</p>
+                 <p>Red Wine</p> 
+            </div>
+            <div class="cta cta2">
+              <p class="price" >₹1350</p>
+              <p>Rose Wine</p> 
+            </div>
+        </div>
+        <section class="features" >
+           <div class="feature">
+               <img  class="icon" src="./icons/wine-glass.png" alt="" width="40px" height="40px">
+               <h3>Rose Wine</h3>
+               <p>Rosés can vary in taste considerably, but they often have bright, red fruit flavours like strawberry, watermelon and peach.</p>
+               <div class="overlay">
+                <img class="img_over" src="" alt="">
+                </div>
+              </div>
+           <div class="feature">
+            <img  class="icon" src="./icons/wine-glass.png" alt="" width="40px" height="40px">
+            <h3>Red Wine</h3>
+            <p>Red wine is a type of wine made from dark-colored grape varieties</p>
+            <div class="overlay">
+              <img class="img_over" src="" alt="">
+            </div>
+          </div>
+           <div class="feature">
+            <img  class="icon" src="./icons/wine-glass.png" alt="" width="40px" height="40px">
+            <h3>Sparkling Wine</h3>
+            <p>Sparkling wine is a wine with significant levels of carbon dioxide in it, making it fizzy.</p>
+            <div class="overlay">
+              <img class="img_over" src="" alt="">
+            </div>
+          </div>
+            <div class="feature">
+            <img  class="icon" src="./icons/wine-glass.png" alt="" width="40px" height="40px">
+            <h3>White Wine</h3>
+            <p>White wine pairs especially well with light, delicate flavours such as creamy soft cheese, fish, and salads</p>
+            <div class="overlay">
+              <img class="img_over" src="" alt="">
+            </div>
+          </div>
+        </section>
+        
+           <section class="about">
+             <img id="image" src="./images/wine.png" alt="" class="about_mocup">
+          
+           <div class="about_details">
+               <h2>Featured Wine</h2>
+               <p class="detail">Yeast consumes the suger in the grapes and converts it to ethnoal</p><br>
+               <p class="detail">This is the one your have been waiting for</p><br>
+               <button>Learn More -></button>
+            </div>
+            </div>
+           <section class="gallery">
+               <h2>Instent Grams</h2>
+               <img src="https://source.unsplash.com/random/207x210" alt="">
+               <img src="https://source.unsplash.com/random/207x209" alt="">
+               <img src="https://source.unsplash.com/random/207x208" alt="">
+               <img src="https://source.unsplash.com/random/207x207" alt="">
+               <img src="https://source.unsplash.com/random/206x206" alt="">
+               <img src="https://source.unsplash.com/random/205x205" alt="">
+               <img src="https://source.unsplash.com/random/204x204" alt="">
+               <img src="https://source.unsplash.com/random/203x203" alt="">
+               <img src="https://source.unsplash.com/random/202x202" alt="">
+               <img src="https://source.unsplash.com/random/201x201" alt="">
+
+           </section>
+     
+   
+</div>
+ 
+<script>
+  const navButton = document.querySelector('button[aria-expanded]');
+
+  function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+</script>
+</body>
+</html>

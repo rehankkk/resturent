@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./dessert.css">
+    <script src="https://kit.fontawesome.com/5001899231.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+      <nav class="menu">
+        <button aria-expanded="false" aria-controls="menu-list">
+          <span class="open">☰</span>
+          <span class="close">×</span>
+          Menu
+        </button>
+        <ul id="menu-list">
+          <li><a href="./index.html" target="" >TACOS</a></li>
+          <li><a href="./beer.html" target="" >BEERS</a></li>
+          <li><a href="./wines.html" target="" >WINES</a></li>
+          <li><a href="./dessert.html" target="" >DESSERTS</a></li>
+          <li><a href="./reservat.html" target="" >RESERVAT</a></li>
+        </ul>
+       </nav>
+         <div class="top">
+            <header class="hero">
+                <h1>Terry's Taco Joint</h1>
+                <p>Pretty Good Tacos!</p>         
+            </header>
+            <div class="cta cta1">
+                 <p class="price" >₹399</p>
+                 <p>Cake</p> 
+            </div>
+            <div class="cta cta2">
+              <p class="price" >₹50.99</p>
+              <p>Coconut Bar</p> 
+            </div>
+        </div>
+        <section class="features" >
+           <div class="feature">
+               <img  class="icon" src="./icons/cupcake.png" alt="" width="40px" height="40px">
+               <h3>Cake</h3>
+               <p>Cake is a form of sweet food made from flour, sugar, and other ingredients, that is usually baked</p>
+               <div class="overlay">
+                <img class="img_over" src="" alt="">
+                </div>
+              </div>
+           <div class="feature">
+            <img  class="icon" src="./icons/cupcake.png" alt="" width="40px" height="40px">
+            <h3>Ice Cream</h3>
+            <p>Ice cream is a sweetened frozen food typically eaten as a snack or dessert. It may be made from dairy milk or cream and is flavoured with a sweetener</p>
+            <div class="overlay">
+              <img class="img_over" src="" alt="">
+            </div>
+          </div>
+           <div class="feature">
+            <img  class="icon" src="./icons/cupcake.png" alt="" width="40px" height="40px">
+            <h3>Apple Pie</h3>
+            <p>An apple pie is a pie in which the principal filling ingredient is apple, originated in England. It is often served with whipped cream</p>
+            <div class="overlay">
+              <img class="img_over" src="" alt="">
+              </div>
+          </div>
+            <div class="feature">
+            <img  class="icon" src="./icons/cupcake.png" alt="" width="40px" height="40px">
+            <h3>Coconut Bar</h3>
+            <p>Coconut bar is a refrigerated dim sum dessert.It is sweet and has a soft, gelatin-like texture but is white in color rather than translucent like gelatin. </p>
+            <div class="overlay">
+              <img class="img_over" src="" alt="">
+              </div>
+          </div>
+        </section>
+        
+           <section class="about">
+             <img id="image" src="./images/dessert.png" alt="" class="about_mocup">
+          
+           <div class="about_details">
+               <h2>Featured Cake</h2>
+               <p class="detail">Cream Profile,easy to hold and loaded with suger</p><br>
+               <p class="detail">This is the one your have been waiting for</p><br>
+               <button>Learn More -></button>
+            </div>
+            </div>
+           <section class="gallery">
+               <h2>Instent Grams</h2>
+               <img src="https://source.unsplash.com/random/207x210" alt="">
+               <img src="https://source.unsplash.com/random/207x209" alt="">
+               <img src="https://source.unsplash.com/random/207x208" alt="">
+               <img src="https://source.unsplash.com/random/207x207" alt="">
+               <img src="https://source.unsplash.com/random/206x206" alt="">
+               <img src="https://source.unsplash.com/random/205x205" alt="">
+               <img src="https://source.unsplash.com/random/204x204" alt="">
+               <img src="https://source.unsplash.com/random/203x203" alt="">
+               <img src="https://source.unsplash.com/random/202x202" alt="">
+               <img src="https://source.unsplash.com/random/201x201" alt="">
+
+           </section>
+     
+   
+</div>
+ 
+<script>
+  const navButton = document.querySelector('button[aria-expanded]');
+
+  function toggleNav({ target }) {
+    const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+</script>
+</body>
+</html>
